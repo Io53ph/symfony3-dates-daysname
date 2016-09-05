@@ -1,0 +1,41 @@
+{
+    "name":        "axidepuy/dates-daysname",
+    "type":        "symfony-bundle",
+    "description": "This bundle helps to show a date's day's name.",
+    "keywords":    ["time", "daysname", "axidepuy"],
+    "homepage":    "https://github.com/axidepuy/dates-daysname",
+    "license":     "GPL",
+
+    "authors": [
+        {
+            "name": "Jozsef Balogh",
+            "homepage": "https://github.com/axidepuy"
+        }
+    ],
+
+    "require": {
+        "php":  ">=5.3.3"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+
+    "suggest": {
+        "symfony/twig-bundle": "to use the Twig daysname function"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Axidepuy\\Bundle\\DatesDaysNameBundle": ""
+        }
+    },
+
+    "target-dir": "axidepuy/dates-days-name",
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
