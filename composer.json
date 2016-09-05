@@ -32,8 +32,6 @@
         }
     },
 
-    "target-dir": "axidepuy/dates-days-name",
-
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.1-dev"
