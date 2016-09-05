@@ -1,10 +1,10 @@
 {
-    "name":        "axidepuy/dates-daysname",
+    "name":        "axidepuy/dates-days-name",
     "type":        "symfony-bundle",
     "version":     "1.0.1-dev",
     "description": "This bundle helps to show a date's day's name.",
     "keywords":    ["time", "daysname", "axidepuy"],
-    "homepage":    "https://github.com/axidepuy/dates-daysname",
+    "homepage":    "https://github.com/axidepuy/dates-days.name",
     "license":     "GPL",
 
     "authors": [
