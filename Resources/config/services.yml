@@ -1,0 +1,6 @@
+services:
+    axidepuydatesdaysnamebundle.daysname.twig_extension:
+        class: Axidepuy\Bundle\AxidepuyDatesDaysNameBundle\Twig\Extension\DaysNameExtension
+        public: false
+        tags:
+            - { name: twig.extension }

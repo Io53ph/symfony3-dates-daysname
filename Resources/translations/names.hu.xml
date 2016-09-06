@@ -4,31 +4,31 @@
         <body>
             <trans-unit id="1">
                 <source>day.1</source>
-                <target>sunday</target>
+                <target>hétfő</target>
             </trans-unit>
             <trans-unit id="2">
                 <source>day.2</source>
-                <target>monday</target>
+                <target>kedd</target>
             </trans-unit>
             <trans-unit id="3">
                 <source>day.3</source>
-                <target>tuesday</target>
+                <target>szerda</target>
             </trans-unit>
             <trans-unit id="4">
                 <source>day.4</source>
-                <target>wednesday</target>
+                <target>csütörtök</target>
             </trans-unit>
             <trans-unit id="5">
                 <source>day.5</source>
-                <target>thursday</target>
+                <target>péntek</target>
             </trans-unit>
             <trans-unit id="6">
                 <source>day.6</source>
-                <target>friday</target>
+                <target>szombat</target>
             </trans-unit>
             <trans-unit id="7">
                 <source>day.7</source>
-                <target>saturday</target>
+                <target>vasárnap</target>
             </trans-unit>
         </body>
     </file>
