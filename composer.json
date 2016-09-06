@@ -26,7 +26,7 @@
         "symfony/twig-bundle": "to use the Twig daysname function"
     },
 
-    "target-dir": "Axidepuy\Bundle\DatesDaysNameBundle",
+    "target-dir": "Axidepuy/Bundle/DatesDaysNameBundle",
 
     "autoload": {
         "psr-0": {
