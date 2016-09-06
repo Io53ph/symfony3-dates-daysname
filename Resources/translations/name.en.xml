@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>day.1</source>
+                <target>sunday</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>day.2</source>
+                <target>monday</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>day.3</source>
+                <target>tuesday</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>day.4</source>
+                <target>wednesday</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>day.5</source>
+                <target>thursday</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>day.6</source>
+                <target>friday</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>day.7</source>
+                <target>saturday</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
