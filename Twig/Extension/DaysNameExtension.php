@@ -1,11 +1,26 @@
 <?php
+
 namespace Axidepuy\Bundle\AxidepuyDatesDaysNameBundle\Twig\Extension;
+
+use Axidepuy\Bundle\AxidepuyDatesDaysNameBundle\Helper\DateHelper;
 
 /**
  * The extension class.
  */
 class DaysNameExtension extends \Twig_Extension
 {
+    private $dateHelper;
+
+    /**
+     * Constructor
+     *
+     * @param DateHelper $dateHelper dateHelper object
+     */
+    public function __construct(DateHelper $dateHelper)
+    {
+        $this->dateHelper = $dateHelper;
+    }
+
     /**
      * {@inheritDoc}
      */
@@ -22,11 +37,9 @@ class DaysNameExtension extends \Twig_Extension
      * @param \Datetime $date
      * @return string The day's name
      */
-    public function daysName(\Datetime $date)
+    public function daysName(\Datetime $date, $locale = null)
     {
-        $days = array(1 => "Hétfő", 2 => "Kedd", 3 => "Szerda", 4 => "Csütörtök", 5 => "Péntek", 6 => "Szombat", 7 => "Vasárnap");
-
-        return $days[$date->format("N")];
+        return $this->dateHelper->getDaysNameByDateAndLocale($date, $locale);
     }
 
     /**
@@ -36,6 +49,6 @@ class DaysNameExtension extends \Twig_Extension
      */
     public function getName()
     {
-        return 'axidepuy_daysname_extension';
+        return 'axidepuydatesdaysnamebundle.daysname.twig_extension';
     }
 }
