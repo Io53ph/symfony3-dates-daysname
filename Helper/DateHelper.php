@@ -38,7 +38,7 @@ class DateHelper
      */
     public function getDaysNameByDateAndLocale(\Datetime $date, $locale = null)
     {
-        $dayNumber = $date->format("N");
+        $dayNumber = $date->format('N');
         $id = "day." . $dayNumber;
 
         return $this->translator->transChoice($id, null, array(), 'names', $locale);
@@ -47,7 +47,7 @@ class DateHelper
     /**
      * Returns the name of the extension.
      *
-     * @return string The extension name
+     * @return string           The extension name
      */
     public function getName()
     {
