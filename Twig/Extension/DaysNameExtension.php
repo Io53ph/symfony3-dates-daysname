@@ -32,6 +32,20 @@ class DaysNameExtension extends \Twig_Extension
     }
 
     /**
+     * {@inheritDoc}
+     */
+    public function getFunctions()
+    {
+        return array(
+            new \Twig_SimpleFunction(
+                    'days_name',
+                    array($this, 'daysName'),
+                    array('is_safe' => array('html'))
+                ),
+        );
+    }
+
+    /**
      * Returns with the day's name
      *
      * @param \Datetime $date   THe date we extract
