@@ -38,19 +38,19 @@ class DateHelper
      */
     public function getDaysNameByDateAndLocale(\Datetime $date, $locale = null)
     {
-        $dayNumber = $date->format('N');
-        $id = "day." . $dayNumber;
+        $id = 'day.' . $this->getDaysNumber($date);
 
         return $this->translator->transChoice($id, null, array(), 'names', $locale);
     }
 
     /**
-     * Returns the name of the extension.
+     * Returns with the day's number
      *
-     * @return string           The extension name
+     * @param \Datetime $date   Date we working with
+     * @return int              The day's number through (1-7)
      */
-    public function getName()
+    public function getDaysNumber(\Datetime $date)
     {
-        return 'axidepuydatesdaysnamebundle.daysname.date_helper';
+        return (int)$date->format('N');
     }
 }
