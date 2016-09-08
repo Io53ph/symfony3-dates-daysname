@@ -54,7 +54,7 @@ In the controller (through the helper service):
 <?php
 echo $this->get('axidepuy.datesdaysname.date_helper')->getDaysNameByDate(new \Datetime("2016-08-09"));
 // it will show the day's name in the current local
-echo $this->get('axidepuy.datesdaysname.date_helper')->getDaysNameByDate(new \Datetime("2016-08-09"), "hu");
+echo $this->get('axidepuy.datesdaysname.date_helper')->getDaysNameByDateAndLocale(new \Datetime("2016-08-09"), "hu");
 // in a different language
 ```
 
