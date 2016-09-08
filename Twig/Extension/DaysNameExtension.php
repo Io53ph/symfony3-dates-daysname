@@ -9,16 +9,16 @@ use Axidepuy\Bundle\AxidepuyDatesDaysNameBundle\Helper\DateHelper;
  */
 class DaysNameExtension extends \Twig_Extension
 {
-    private $dateHelper;
+    private $helper;
 
     /**
      * Constructor
      *
-     * @param DateHelper $dateHelper dateHelper object
+     * @param dateHelper        $dateHelper dateHelper object
      */
     public function __construct(DateHelper $dateHelper)
     {
-        $this->dateHelper = $dateHelper;
+        $this->helper = $dateHelper;
     }
 
     /**
@@ -34,18 +34,19 @@ class DaysNameExtension extends \Twig_Extension
     /**
      * Returns with the day's name
      *
-     * @param \Datetime $date
-     * @return string The day's name
+     * @param \Datetime $date   THe date we extract
+     * @param var $locale       Desired locale
+     * @return string           The day's name
      */
     public function daysName(\Datetime $date, $locale = null)
     {
-        return $this->dateHelper->getDaysNameByDateAndLocale($date, $locale);
+        return $this->helper->getDaysNameByDateAndLocale($date, $locale);
     }
 
     /**
      * Returns the name of the extension.
      *
-     * @return string The extension name
+     * @return string           The extension name
      */
     public function getName()
     {
