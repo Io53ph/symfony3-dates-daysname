@@ -38,9 +38,9 @@ class DateHelper
      */
     public function getDaysNameByDateAndLocale(\Datetime $date, $locale = null)
     {
-        $id = 'day.' . $this->getDaysNumber($date);
+        $id = "day." . $this->getDaysNumber($date);
 
-        return $this->translator->transChoice($id, null, array(), 'names', $locale);
+        return $this->translator->transChoice($id, null, array(), "names", $locale);
     }
 
     /**
@@ -51,6 +51,6 @@ class DateHelper
      */
     public function getDaysNumber(\Datetime $date)
     {
-        return (int)$date->format('N');
+        return (int)$date->format("N");
     }
 }
