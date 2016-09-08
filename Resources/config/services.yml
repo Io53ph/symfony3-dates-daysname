@@ -1,5 +1,5 @@
 services:
-    axidepuydatesdaysnamebundle.daysname.date_helper:
+    axidepuy.date_helper:
         class: Axidepuy\Bundle\AxidepuyDatesDaysNameBundle\Helper\DateHelper
         public: true
         arguments: ["@translator"]
@@ -7,6 +7,6 @@ services:
     axidepuydatesdaysnamebundle.daysname.twig_extension:
         class: Axidepuy\Bundle\AxidepuyDatesDaysNameBundle\Twig\Extension\DaysNameExtension
         public: false
-        arguments: ["@axidepuydatesdaysnamebundle.daysname.date_helper"]
+        arguments: ["@axidepuy.date_helper"]
         tags:
             - { name: twig.extension }
