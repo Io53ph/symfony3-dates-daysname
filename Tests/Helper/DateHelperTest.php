@@ -11,7 +11,7 @@ class DateHelperTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $translator = $this->getMock('Symfony\Component\Translation\Translator', array(), array(), '', false);
+        $translator = $this->createMock('Symfony\Component\Translation\Translator', array(), array(), '', false);
         $translator->expects($this->any())
             ->method('transChoice')
             ->will($this->returnArgument(0));
