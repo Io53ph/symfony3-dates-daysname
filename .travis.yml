@@ -29,3 +29,8 @@ before_install: if [[ "$SYMFONY_VERSION" != "" ]]; then composer require --no-up
 install: composer update --prefer-dist
 
 script: phpunit
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
