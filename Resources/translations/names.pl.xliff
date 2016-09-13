@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file datatype="plaintext" original="names.en.xliff" source-language="en" target-language="pl">
+        <body>
+            <trans-unit id="1">
+                <source>day.1</source>
+                <target>W poniedziałek</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>day.2</source>
+                <target>We wtorek</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>day.3</source>
+                <target>Środa</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>day.4</source>
+                <target>Czwartek</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>day.5</source>
+                <target>W piątek</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>day.6</source>
+                <target>W sobotę</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>day.7</source>
+                <target>Niedziela</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
